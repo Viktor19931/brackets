@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body style="background: #daf4e6">
+    <header style="text-align: center">
+        <nav style="text-align: right">
+            <input type="text" name="username" placeholder="username" maxlength="20">
+            <input type="password" name="password" placeholder="password" maxlength="20">
+            <input type="submit" value="Log in">
+        </nav>
+        <h1>Social reserch: "Social networks"</h1>
+        <h3>Congratulations,
+            please spend a few minutes of your time filling out the next questionnaire.</h3>
+    </header>
+    <main>
+        <form action="https://formspree.io/viktor_hordubey@yahoo.com" method="POST">
+            <fieldset >
+                <legend>Personal information</legend>
+                <label>First name :<input type="text" name="firstname" placeholder="your firstname" size="27" required></label>
+                <label>Last name :<input type="text" name="lastname" placeholder="your lastname" size="27" required></label>
+                <label>Country of birth:<input list="country" name="country" size="23"></label>
+                    <datalist id="country">
+                        <option value="Ukraine"></option>
+                        <option value="Slovakia"></option>
+                        <option value="Russia"></option>
+                        <option value="USA"></option>
+                        <option value="Hungary"></option>
+                        <option value="Germany"></option>
+                    </datalist>
+                <label>Date of birth:<input type="date" name="bday"></label>
+            </fieldset>
+            <article>
+                <h2>FORM</h2>
+                <hr>
+                <section>
+                    <h3>Do you have social network?</h3>
+                    <label><input type="radio" name="social" value="yes" checked>Yes</label>
+                    <label><input type="radio" name="social" value="no">No</label>
+                </section>
+                <section>
+                    <h3>How often do you use social network?</h3>
+                    <label><input type="radio" name="using" value="everyday" checked>Everyday</label><br>
+                    <label><input type="radio" name="using" value="sometimes">Sometimes</label><br>
+                    <label><input type="radio" name="using" value="rarely">Rarely</label><br>
+                    <label><input type="radio" name="using" value="never">Never</label><br>
+                </section>
+                <section>
+                    <h3>Have you ever been registered in next networks?</h3>
+                    <label><input type="checkbox" name="registered" value="facebook" checked>Facebook</label><br>
+                    <label><input type="checkbox" name="registered" value="instagram">Instagram</label><br>
+                    <label><input type="checkbox" name="registered" value="Connect">Connect</label><br>
+                    <label><input type="checkbox" name="registered" value="Twitter">Twitter</label><br>
+                    <label><input type="checkbox" name="registered" value="Other">Other:</label>
+                    <input type="text" name="registered" placeholder="Enter answer">
+                </section>
+                <section>
+                    <h3>Choose your opinion about social networks</h3>
+                    <input list="option" name="opinion">
+                    <datalist id="option">
+                        <option value="positive">positive</option>
+                        <option value="neutral">neutral</option>
+                        <option value="negative">negative</option>
+                    </datalist><br>
+                </section>
+                <section>
+                    <h3>How much time do you spend in the internet?</h3>
+                    <select name="time" id="time">
+                        <option value="<1h">less than 1 hour</option>
+                        <option value="2-4h">2-4 hours</option>
+                        <option value="5-7h">5-7 hours</option>
+                        <option value=">7h">more than 7 hours</option>
+                    </select>
+                </section>
+                <section>
+                    <h3>Do you use e-mail services?</h3>
+                    <select name="email" multiple size="4">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="rarely">Rarely</option>
+                        <option value="sometimes">Sometimes</option>
+                    </select>
+                </section>
+                <section>
+                    <h3>What do you use most often for searcing information in internet?</h3>
+                    <label><input type="radio" name="email" value="social networks">Social networks</label><br>
+                    <label><input type="radio" name="email" value="searching engines">Searching engines</label><br>
+                    <label><input type="radio" name="email" value="bothofthem">Both of them</label><br>
+                    <label><input type="radio" name="email" value="Other">Other option:</label>
+                    <input type="text" name="email" placeholder="Enter answer">
+                </section>
+                <section>
+                    <h3>What is useful in social networks for learning?</h3>
+                    <label><input type="checkbox" name="learn-at-network" value="">Intrasting information</label><br>
+                    <label><input type="checkbox" name="learn-at-network" value="">Send documents</label><br>
+                    <label><input type="checkbox" name="learn-at-network" value="">Help from collegs</label><br>
+                    <label><input type="checkbox" name="learn-at-network" value="">Nothing</label><br>
+                    <label><input type="checkbox" name="learn-at-network" value="">Other option</label>
+                    <input type="text" name="learn-at-internet" size="22">
+                </section>
+                <section>
+                    <h3>Range input</h3>
+                    <label><input type="range" min="1" max="100" step="5"></label>
+                </section>
+                <div>
+                    <p>Link for table <a href="table.html">here</a></p>
+                </div>
+                <section>
+                    <h3>Additional information</h3>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="text here..."></textarea><br>
+                    <label>Your phone number: <input type="tel" value="+380"></label><br>
+                    <label>Your e-mail address:<input type="email" placeholder="example@yahoo.com"></label><br>
+                    <input type="submit" value="Submit form" >
+                    <input type="reset" value="Reset" >
+                </section>
+            </article>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
