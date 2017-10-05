@@ -1,0 +1,6 @@
+body {
+    background: #ccc;
+    font-size: 40px;
+    text-shadow: 0 2px 5px #ccc,
+                 13px 14px 15px #000;
+}
